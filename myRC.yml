@@ -1,21 +1,21 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-    name: myjavaapp-rc
+    name: nginx-rc
 spec: 
   replicas: 3
   selector:
-      app: myjavaapp
+      app: mynginx
       version: 2.6.2
   template:
       metadata: 
       lables:
-         app: myjavaapp
+         app: mynginx
          version: 2.6.2
       spec:
       containers:
-      - name: myjavaap-container
-      image:  maha4iac/mymahalogin02april22:2
+      - name: mynginx-container
+      image: nginx
       ports:
       - containerPort: 8080
         
