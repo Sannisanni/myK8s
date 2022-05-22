@@ -12,7 +12,7 @@ spec:
        lables:
          app: mynginx-app
          version: 2.6.2
-      spec:
+       spec:
         containers:
         - name: mynginx-app
           image: nginx
